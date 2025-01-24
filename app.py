@@ -16,7 +16,7 @@ DEEPSEEK_API_KEY = "sk-70b2c28863fc45b69315790475179f13"
 DEEPSEEK_API_ENDPOINT = "https://api.deepseek.com/v1/chat/completions"  # Replace with the actual API endpoint
 
 # Path to the Excel file
-EXCEL_FILE_PATH = "/Users/minhe/wulibeida79/alumni_seminars_withid.xlsx"
+EXCEL_FILE_PATH = "alumni_seminars_withid.xlsx"
 JSON_FILE_PATH = "seminars.json"
 
 def load_seminars_from_excel():
