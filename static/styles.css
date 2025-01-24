@@ -1,0 +1,213 @@
+/* General styling for the page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4CAF50;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+    font-size: 24px;
+}
+
+/* Chat box styling */
+#chat-box {
+    height: 60vh;
+    border: 1px solid #ccc;
+    padding: 10px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* User message styling */
+.user-message {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    padding: 8px;
+    background-color: #007bff;
+    border-radius: 8px;
+    width: 80%;
+    align-self: flex-end;
+    word-wrap: break-word;
+}
+
+.user-message .icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* Bot message styling */
+.bot-message {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #333;
+    padding: 8px;
+    background-color: #e9ecef;
+    border-radius: 8px;
+    width: 80%;
+    align-self: flex-start;
+    word-wrap: break-word;
+}
+
+.bot-message .icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* Form styling */
+#chat-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#user-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fff; /* Default background color */
+}
+
+/* Style for disabled input field */
+#user-input:disabled {
+    background-color: #e0e0e0; /* More noticeable grey background */
+    color: #888; /* Grey text color */
+    cursor: not-allowed; /* Change cursor to indicate disabled state */
+}
+
+#chat-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#chat-form button:disabled {
+    background-color: #cccccc; /* Grey out the button when disabled */
+    cursor: not-allowed; /* Change cursor to indicate disabled state */
+}
+
+#chat-form button:hover:not(:disabled) {
+    background-color: #45a049;
+}
+
+/* Table container styling */
+.table-container {
+    overflow-x: auto;
+    margin-top: 10px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Highlight rows with "Upcoming" classification */
+tr.upcoming-row {
+    background-color: #e6f7ff;
+    font-weight: bold;
+}
+
+/* Link styling */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Media queries for mobile devices */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    header .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    #chat-box {
+        height: 50vh;
+    }
+
+    #user-input {
+        font-size: 14px;
+    }
+
+    #chat-form button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 6px;
+        font-size: 12px;
+    }
+}

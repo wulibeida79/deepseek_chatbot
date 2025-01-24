@@ -1,0 +1,158 @@
+/* General styling for the page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #4CAF50;
+    font-size: 24px; /* Smaller font size for mobile */
+    margin-bottom: 10px;
+}
+
+/* Chat box styling */
+#chat-box {
+    height: 60vh; /* Use viewport height for better mobile scaling */
+    border: 1px solid #ccc;
+    padding: 10px;
+    overflow-y: auto; /* Make chat box scrollable */
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* User message styling (aligned to the left with blue background) */
+.user-message {
+    color: white; /* White font */
+    padding: 8px;
+    background-color: #007bff; /* Blue background */
+    border-radius: 8px;
+    width: 100%; /* Span the full width */
+    align-self: flex-start;
+    word-wrap: break-word; /* Ensure long messages don't overflow */
+}
+
+/* Bot message styling (aligned to the left with no background) */
+.bot-message {
+    color: #333; /* Dark font */
+    padding: 8px;
+    background-color: transparent; /* No background */
+    border-radius: 8px;
+    width: 100%; /* Span the full width */
+    align-self: flex-start;
+    word-wrap: break-word; /* Ensure long messages don't overflow */
+}
+
+/* Form styling */
+#chat-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#user-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#chat-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#chat-form button:hover {
+    background-color: #45a049;
+}
+
+/* Table container styling */
+.table-container {
+    overflow-x: auto; /* Make table scrollable horizontally on mobile */
+    margin-top: 10px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px; /* Smaller padding for mobile */
+    text-align: left;
+    font-size: 14px; /* Smaller font size for mobile */
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Highlight rows with "Upcoming" classification */
+tr.upcoming-row {
+    background-color: #e6f7ff; /* Light blue background */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+/* Link styling */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Media queries for mobile devices */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 20px; /* Smaller font size for mobile */
+    }
+
+    #chat-box {
+        height: 50vh; /* Adjust height for smaller screens */
+    }
+
+    #user-input {
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+
+    #chat-form button {
+        padding: 10px 15px; /* Smaller padding for mobile */
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+
+    th, td {
+        padding: 6px; /* Smaller padding for mobile */
+        font-size: 12px; /* Smaller font size for mobile */
+    }
+}
