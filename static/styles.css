@@ -57,9 +57,9 @@ header h1 {
     padding: 8px;
     background-color: #007bff;
     border-radius: 8px;
-    width: 80%;
-    align-self: flex-end;
+    width: 95%; /* Occupy 95% of the chat window width */
     word-wrap: break-word;
+    margin: 0 auto; /* Center the message horizontally */
 }
 
 .user-message .icon {
@@ -77,9 +77,9 @@ header h1 {
     padding: 8px;
     background-color: #e9ecef;
     border-radius: 8px;
-    width: 80%;
-    align-self: flex-start;
+    width: 95%; /* Occupy 95% of the chat window width */
     word-wrap: break-word;
+    margin: 0 auto; /* Center the message horizontally */
 }
 
 .bot-message .icon {
