@@ -132,7 +132,6 @@ header h1 {
 
 /* Table container styling */
 .table-container {
-    overflow-x: auto; /* Enable horizontal scrolling */
     margin-top: 10px;
     width: 100%; /* Ensure the container takes full width */
     max-width: 100%; /* Prevent the container from exceeding the chat box width */
@@ -145,7 +144,6 @@ table {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    min-width: 100%; /* Ensure the table takes the full width of its container */
 }
 
 th, td {
@@ -153,7 +151,7 @@ th, td {
     padding: 8px;
     text-align: left;
     font-size: 14px;
-    white-space: nowrap; /* Prevent text from wrapping */
+    white-space: normal; /* Allow text to wrap */
 }
 
 th {
