@@ -199,10 +199,11 @@ a:hover {
 
     #user-input {
         font-size: 14px;
+        padding: 8px; /* Smaller padding for mobile */
     }
 
     #chat-form button {
-        padding: 10px 15px;
+        padding: 8px 16px; /* Smaller padding for mobile */
         font-size: 14px;
     }
 

@@ -142,7 +142,7 @@ def cached_chat_with_deepseek(query, seminars_json, conversation_history):
     """
     # Prepare the prompt for DeepSeek
     prompt = f"""
-    You are a helpful assistant that provides information about seminars.
+    You are a  helpful assistant that provides information about seminars.
     Here is the list of seminars in JSON format: {seminars_json}
     The user has asked: {query}
     Please provide a helpful and conversational response. In the response, if a seminar or a list of seminars, just embed a JSON format of list of seminar ids.
