@@ -251,9 +251,7 @@ conversation_history = []
 def home():
     """Render the chat interface."""
     return render_template("index.html")
-from flask import send_from_directory
 
-# Add this route to serve the seminars.json file
 @app.route("/seminars.json")
 def serve_seminars_json():
     return send_from_directory(os.path.dirname(JSON_FILE_PATH), "seminars.json")
@@ -317,4 +315,5 @@ def chat():
     return jsonify({"response": response, "type": "text"})
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 10000))  # Use Render's PORT environment variable
+    app.run(host="0.0.0.0", port=port, debug=False)  # Disable debug mode for production
